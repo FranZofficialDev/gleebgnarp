@@ -2,7 +2,7 @@ body
 {
 	font-family:Comic Sans MS;
 	color:white;
-	background:black url(space.gif);
+	background:black url(space.gif) top center fixed;
 	background-size:100% 100%;
 }
 section
@@ -47,4 +47,5 @@ input
 	outline: none;
 	border: none;
 	height:200px;
+
 }
