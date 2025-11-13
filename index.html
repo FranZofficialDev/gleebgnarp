@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Gleeby Deeby</title>
+		<link rel="icon" type="image/jpg" href="icon.jpg"/>
+		<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css">
+	</head>
+	<body>
+		<script>
+		let songPlayed=false;
+		let songMuted=true;
+			function singSong(sound)
+			{
+				if(!songPlayed)
+				{
+					document.getElementById(sound).play();
+					songPlayed=true;
+					songMuted=false;
+				}
+				else
+				{
+					if(!songMuted)
+					{
+						document.getElementById(sound).volume=0;
+						songMuted=true;
+					}
+					else
+					{
+						document.getElementById(sound).volume=1;
+						songMuted=false;
+					}
+				}
+			}
+		</script>
+		<header>
+			<hr style="height:2px;border-width:0;color:white;background-color:white"> 
+			<p>Welcome. Welcome to <a href="https://gleebydeeby.com" style="text-decoration:none; color:white;">GleebyDeeby.com</a></p>
+			<hr style="height:2px;border-width:0;color:white;background-color:white"> 
+		</header>
+		<section>
+			<div>
+				<button onclick="singSong('eek')"><img src="style.gif" class="argemstyle"/></button>
+				<br/>
+				<span>^^^click to toggle music^^^</span>
+			</div>
+			<br/>
+			<div>
+				<span>Muy importante</span>
+				<br/>
+				<iframe width="480" height="270" src="https://www.youtube-nocookie.com/embed/URtqADoz9uA?si=5gUUANUsCx-c6Ipo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+			</div>
+			<div>
+				<form action="https://votv.dev">
+					<input type="image" name="submit" src="hotel.gif" border="0" alt="Submit"/>
+				</form>
+				<span>^^^VotV official page^^^</span>
+			</div>
+			<div>
+				<form action="https://twitch.tv/vargskelethor">
+					<input type="image" name="submit" src="frenrotat.gif" border="0" alt="Submit"/>
+				</form>
+				<span>^^^VISIT UNCLE JOBEL^^^</span>
+			</div>
+			<audio hidden controls loop id="eek">
+				<source src="mrow.mp3" type="audio/mpeg">
+			</audio>
+		</section>
+		<br/>
+		<footer>
+			>FranZofficial made this (not proud lol)
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,50 @@
+body
+{
+	font-family:Comic Sans MS;
+	color:white;
+	background:black url(space.gif);
+	background-size:100% 100%;
+}
+section
+{
+	color:#75db70;
+	height:70%;
+	text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+header
+{
+	background:url(thegleeby.png);
+	background-size:10% 100%;
+	margin-top:10px;
+	height:20%;
+	text-align:center;
+	font-family: "Share Tech Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size:40px;
+	margin-bottom:10px;
+}
+footer
+{
+	font-family: "Share Tech Mono", monospace;
+	font-weight: 400;
+	font-style: normal;
+	font-size:10px;
+}
+.argemstyle
+{
+	height:220px;
+}
+button
+{
+	background-color: transparent;
+	outline: none;
+	border: none;
+}
+input
+{
+	background-color: transparent;
+	outline: none;
+	border: none;
+	height:200px;
+}
